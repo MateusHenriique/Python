@@ -5,10 +5,10 @@ dam = metros / 10
 dm = metros * 10
 cm = metros * 100
 mm = metros * 1000
-print('a medida de {} corresponde a: '.format(metros))
-print('em kilometros:  {} km'.format(km))
-print('em hectometro: {} hm'.format(hm))
-print('em decametros: {} dam'.format(dam))
-print('em centimetros: {} cm'.format(dm))
-print('em decimetros: {} dm'.format(cm))
-print('em milimetros: {} mm'.format(mm))
+print('A medida de {} corresponde a: '.format(metros))
+print('Em kilometros:  {} km'.format(km))
+print('Em hectometro: {} hm'.format(hm))
+print('Em decametros: {} dam'.format(dam))
+print('Em centimetros: {} cm'.format(dm))
+print('Em decimetros: {} dm'.format(cm))
+print('Em milimetros: {} mm'.format(mm))
