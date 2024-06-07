@@ -1,5 +1,0 @@
-n1 = int(input('digite um numero: '))
-print('analizando o numero {} conseguimos dizer que:'.format(n1))
-print('o dobro dele é {}'.format(n1 * 2))
-print('o triplo é {}'.format(n1 * 3))
-print('e a raiz quadrada é {:.2f}'.format(n1 ** (1 / 2)))
