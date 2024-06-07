@@ -1,14 +1,14 @@
-METROS = int(input('digite um valor em metros: '))
-KM = METROS / 1000 
-HM = METROS / 100
-DAM = METROS / 10
-DM = METROS / 10
-CM = METROS * 100
-MM = METROS * 1000
-print('a medida de {} corresponde a: '.format(METROS))
-print('em kilometros:  {} km'.format(KM))
-print('em hectometro: {} hm'.format(HM))
-print('em decametros: {} dam'.format(DAM))
-print('em centimetros: {} cm'.format(CM))
-print('em decimetros: {} dm'.format(DM))
-print('em milimetros: {} mm'.format(MM))
+metros = int(input('digite um valor em metros: '))
+km = metros / 1000 
+hm = metros / 100
+dam = metros / 10
+dm = metros * 10
+cm = metros * 100
+mm = metros * 1000
+print('a medida de {} corresponde a: '.format(metros))
+print('em kilometros:  {} km'.format(km))
+print('em hectometro: {} hm'.format(hm))
+print('em decametros: {} dam'.format(dam))
+print('em centimetros: {} cm'.format(dm))
+print('em decimetros: {} dm'.format(cm))
+print('em milimetros: {} mm'.format(mm))
