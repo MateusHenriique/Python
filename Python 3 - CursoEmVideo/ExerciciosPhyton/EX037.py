@@ -5,10 +5,8 @@ print('-='*20)
 print('[ 1 ] Converter para BINARIO')
 print('[ 2 ] Converter para OCTAL')
 print('[ 3 ] Converter para HEXADECIMAL')
-
-import math 
-
 converte = int(input('Sua opção: '))
+
 if converte == 1:
     print('O numero {} convertido em binario fica: {}'.format(inteiro, bin(inteiro)[2:]))        
 elif converte == 2:
