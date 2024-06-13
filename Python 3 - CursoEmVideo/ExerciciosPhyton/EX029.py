@@ -1,4 +1,5 @@
 velocidade = float(input('voce esta a quantos KM/h: '))
+
 if velocidade > 80:
     print('voce esta acima do limite de velocidade que é 80KM/h')
     multa = (velocidade - 80) * 7

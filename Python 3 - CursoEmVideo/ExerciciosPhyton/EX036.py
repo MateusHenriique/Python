@@ -1,7 +1,6 @@
 print('-='*40)
 print('SIMULAÇÃO FINANCIAMENTO')
 print('-='*40)
-
 valor_casa = float(input('qual o valor da casa que voce deseja financiar: '))
 valor_salario = float(input('qual o valor do seu asalario atual: '))
 parcelas = int(input('em quantos anos voce deseja financiar o imovel: '))
