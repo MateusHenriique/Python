@@ -1,6 +1,6 @@
 from datetime import date
 
-nascimento = int(input('digite o ano de nascimento do atleta: ')) 
+nascimento = int(input('Digite o ano de nascimento do atleta: ')) 
 ano_atual = date.today().year 
 idade = ano_atual - nascimento
 
