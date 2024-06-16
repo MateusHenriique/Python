@@ -1,12 +1,16 @@
+print('{:=^40}'.format(' LOJA DO MATEUS '))
 preco = float(input('Digite o valor do produto: R$ '))
-print('Qual será a forma de pagamento: ')
-print('À vista [1]')
-print('Cheque [2]')
-print('À vista no cartão [3]')
-print('parcelado no cartão [4]')
-pagamento = int(input())
+print('{:=^40}'.format(' FORMAS DE PAGAMENTO '))
+print('[ 1 ] À vista')
+print('[ 2 ] Cheque ')
+print('[ 3 ]À vista no cartão ')
+print('[ 4 ] Parcelado no cartão ')
+pagamento = int(input('Qual forma de pagamento você deseja: '))
+
 if pagamento == 4:
     parcela = int(input('Em quantas vezes você quer parcelar: x'))
+
+print('=' * 40)
 
 if pagamento == 1:
     print('Você pagou à vista e recebeu um desconto de 10%')
@@ -27,5 +31,6 @@ elif parcela >=3:
     print('Você pagou em {}x no cartão e teve um juros de 20%'.format(parcela))
     desconto = preco + ((preco / 100) * 20)
     print('O produto foi de R${:.2f} para R${:.2f}'.format(preco, desconto))
+    print('Em {} parcelas de R$ {:.2f}'.format(parcela, (desconto / parcela)))
 else:
     print('Forma de pagamento incorreta!')
