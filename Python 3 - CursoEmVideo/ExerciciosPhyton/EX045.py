@@ -17,6 +17,7 @@ sleep(1)
 print('{:^40}'.format('PO!!'))
 print('-='*20)
 jogada_maquina = random.randint(1, 3)
+
 if jogada_maquina == 1 and jogada_usuario == 2:
     print('Usuario: PAPEL!   x   Maquina: PEDRA!')
     print('Usuario VENCE!')
