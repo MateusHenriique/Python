@@ -45,3 +45,5 @@ elif jogada_usuario == 2 and jogada_maquina == 2:
 elif jogada_usuario == 3 and jogada_maquina == 3:
     print('Usuario: TESOURA!   x   Maquina: TESOURA!')
     print('EMPATE!')
+else:
+    print('Jogada invalida!')
