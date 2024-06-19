@@ -36,3 +36,12 @@ elif jogada_usuario == 2 and jogada_maquina == 3:
 elif jogada_usuario == 3 and jogada_maquina == 1:
     print('Usuario: TESOURA!   x   Maquina: PEDRA!')
     print('Maquina VENCE!')
+elif jogada_usuario == 1 and jogada_maquina == 1:
+    print('Usuario: PEDRA!   x   Maquina: PEDRA!')
+    print('EMPATE!')
+elif jogada_usuario == 2 and jogada_maquina == 2:
+    print('Usuario: PAPEL!   x   Maquina: PAPEL!')
+    print('EMPATE!')
+elif jogada_usuario == 3 and jogada_maquina == 3:
+    print('Usuario: TESOURA!   x   Maquina: TESOURA!')
+    print('EMPATE!')
