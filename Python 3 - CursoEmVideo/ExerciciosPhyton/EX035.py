@@ -9,6 +9,9 @@ print('-='*20)
 
 #calculo retas
 if (a + b > c) and (b + c > a) and (c + a > b):
+
     print('Essas retas podem formar um triangulo')
+    
 else:
+
     print('Essas retas não podem formar um triangulo.')

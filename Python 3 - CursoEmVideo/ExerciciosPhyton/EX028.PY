@@ -11,7 +11,11 @@ sleep(2)
 res = int(input('em que numero eu pensei? '))
 print('processando...')
 sleep(5)
+
 if res == n_aduvinha:
+
     print('voce certou!!!')
+
 else:
+    
     print('errou!! eu tinha pensado em {}'.format(n_aduvinha))      

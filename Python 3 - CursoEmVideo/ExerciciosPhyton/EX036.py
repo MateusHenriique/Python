@@ -8,11 +8,14 @@ prestacao_mensal = valor_casa / (parcelas * 12)
 print('o valor das prestacoes ficariam R${:.2f}'.format(prestacao_mensal))
 
 if (valor_salario / 100 * 30 < prestacao_mensal):
+
     print('-='*40)
     print('FINANCIAMENTO NEGADO')
     print('sua renda nao e o suficiente para bater o valor minimo para financiar um imovel deste valor.')
     print('-='*40)
+    
 else:
+
     print('-='*40)
     print('FINANCIAMENTO APROVADO')
     print('Você atente os requisitos minimos para o financiamento caso aja interece em finalizar o financiamento, comparecer a uma agencia!')
