@@ -1,8 +1,13 @@
-frase = str(input('Digite uma frase: ')).strip()
+frase = str(input('Digite uma frase: ')).strip().upper()
 frase_2 = frase.split()
-frase_3 = ''.join(frase)
-palindromo = frase_3[::-1]
-print('O inverso de {} é {}'.format(frase, frase[::-1]))
+frase_3 = ''.join(frase_2)
+palindromo = ''
+
+for letra in range(len(frase_3) -1, -1, -1):
+
+    palindromo = palindromo + frase_3[letra]
+
+print('O inverso de {} é {}'.format(frase_3, palindromo))
 
 if frase == palindromo:
 
