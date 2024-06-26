@@ -7,9 +7,9 @@ maior_nome = ''
 for c in range(1,5):
 
     print('{:=^30}'.format(' {}° PESSOA '.format(c)))
-    nome = str(input('Digite o nome: '.format(c)))
+    nome = str(input('Digite o nome: '.format(c))).strip()
     idade = int(input('Digite a idade: '.format(c)))
-    sexo = str(input('Digite o sexo: [M / F]'.format(c)).upper())
+    sexo = str(input('Digite o sexo: [M / F]'.format(c)).strip().upper())
 
  
     soma_idade = soma_idade + idade
