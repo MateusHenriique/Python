@@ -1,4 +1,4 @@
-print('{:=^40}'.format(' LOJA DO MATEUS '))
+print('{:=^40}'.format(' LOJA PERNAMBUCANAS '))
 preco = float(input('Digite o valor do produto: R$ '))
 print('{:=^40}'.format(' FORMAS DE PAGAMENTO '))
 print('[ 1 ] À vista')
