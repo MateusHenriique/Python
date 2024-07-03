@@ -11,6 +11,7 @@ while finalizar != 5:
 
     while escolha != 4:
 
+        print('-='*20)
         print('''
         [1] Somar
         [2] Multiplicar
@@ -18,12 +19,13 @@ while finalizar != 5:
         [4] Novos Numeros
         [5] Sair do programa
         ''')
-        escolha = int(input('Qual das opções voce deseja executar: '))  
+        print('-='*20)
+        escolha = int(input('Qual das opções voce deseja executar: '))
 
         if escolha == 1:
 
             print('a soma dos dois numeros digitados é {}'.format(n1 + n2))
-            sleep(2)
+            sleep(2 )
 
         elif escolha == 2:
 
@@ -55,4 +57,4 @@ while finalizar != 5:
 
             print('Escolha invalida')
 
-print('Programa finalizado!')
+print('Programa finalizao!')
