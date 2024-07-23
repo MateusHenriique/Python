@@ -5,21 +5,25 @@ print('-='*20)
 print('{:^40}'.format('J O K E N P Ô'))
 print('-='*20)
 seguidas = 0
+PoI_jogador = str(input('Par ou Impar? ')).strip().lower()
+PoI_maquina = ' '
 
 while True:
 
-    PoI_jogador = str(input('Par ou Impar? ')).strip().lower()
+    while PoI_jogador not in 'parimpar':
 
-    if PoI_jogador == 'par':
+        PoI_jogador = str(input('Resposta invalida tente novamente... Par ou Impar? ')).strip().lower()
 
-        PoI_maquina = 'impar'
+        if PoI_jogador == 'par':
 
-    else:
+            PoI_maquina = 'impar'
 
-        PoI_maquina = 'par'
+        else:
+
+            PoI_maquina = 'par'
 
     jogador = int(input('Digite um numero entro 1 e 10: '))
-    maquina = random.randint(1, 10)
+    maquina = random.randint(0, 11)
     PoI = jogador + maquina
     print('-='*20)
     print(f'Jogador: {PoI_jogador} {jogador}')
