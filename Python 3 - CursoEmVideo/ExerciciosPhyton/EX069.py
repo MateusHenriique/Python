@@ -1,12 +1,11 @@
 print('-='*20)
 print('{:^40}'.format('CADASTRO PESSOAS'))
 print('-='*20)
-mais_18 = tot_homens = 0
+mais_18 = tot_homens = tot_mulheres = 0
 
 while True:
 
-    str_idade = str(input('Digite a idade da pessoa: '))
-
+    str_idade = str(input('Digite a idade da pessoa: ')).strip()
     while True:
 
         if str_idade.isdigit() == True:
@@ -25,7 +24,7 @@ while True:
             
             print('-='*20)
             print('idade invalida tente novamente...')
-            str_idade = (input('Digite a idade da pessoa: '))
+            str_idade = (input('Digite a idade da pessoa: ')).strip()
         
     sexo = str(input('Digite o sexo da pessoa [M/F]: ')).strip().upper()
 
@@ -52,6 +51,10 @@ while True:
 
         tot_homens += 1
 
+    if sexo == 'F' or sexo == 'FEMININO' and idade < 20:
+
+        tot_mulheres += 1
+
     if continua == 'N':
 
         break
@@ -59,3 +62,4 @@ while True:
 print('-='*20)
 print(f'O total de pessoas com mais de 18 anos cadastradas foram: {mais_18}')
 print(f'O total de homens cadastrados foram: {tot_homens}')
+print(f'O total de mulheres com menos de 20 anos é: {tot_mulheres}')
