@@ -10,9 +10,9 @@ PoI_maquina = ' '
 
 while True:
 
-    while PoI_jogador not in 'parimpar':
-
-        PoI_jogador = str(input('Resposta invalida tente novamente... Par ou Impar? ')).strip().lower()
+    while PoI_jogador != 'par' and PoI_jogador !='impar':
+        
+        PoI_jogador = str(input('Resposta invalida tente novamente! Par ou Impar? ')).strip().lower()
 
         if PoI_jogador == 'par':
 
@@ -23,7 +23,7 @@ while True:
             PoI_maquina = 'par'
 
     jogador = int(input('Digite um numero entro 1 e 10: '))
-    maquina = random.randint(0, 11)
+    maquina = random.randint(0, 10)
     PoI = jogador + maquina
     print('-='*20)
     print(f'Jogador: {PoI_jogador} {jogador}')
@@ -50,7 +50,7 @@ while True:
 
         if PoI % 2 == 1:
 
-            print(f'{jogador} + {maquina} é {PoI}, que é Impar Jogador Venceu!!')
+            print(f'{jogador} + {maquina} é {PoI}, que é Impar Você Venceu!!')
             print('-='*20)
             print('Vamos jogar Novamente...')
             print('-='*20)
@@ -58,7 +58,7 @@ while True:
 
         else:
 
-            print(f'{jogador} + {maquina} é {PoI}, que é Par Maquina Venceu!!')
+            print(f'{jogador} + {maquina} é {PoI}, que é Par Você Venceu!!')
             print('-='*20)
             break
     
