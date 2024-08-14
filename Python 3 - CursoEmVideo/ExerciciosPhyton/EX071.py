@@ -25,27 +25,30 @@ while True:
             
         else:
             
+            saldo -= saque
             troco = saque
             
-            while troco > 0:
-            
-                if troco >= 50:
-                    troco -= 50
-                    tot_50 += 1
+            while True:
+                
+                if troco != 0:
+                    if troco >= 50:
+                        troco -= 50
+                        tot_50 += 1
+                            
+                    elif troco >= 20:
+                        troco -= 20 
+                        tot_20 += 1
                         
-                elif saque >= 20:
-                    troco -= 20 
-                    tot_20 += 1
-                    
-                elif troco >= 10:
-                    troco -= 10
-                    tot_10 += 1
-                    
-                elif troco >= 1: 
-                    troco -= 1
-                    tot_1 += 1
-                    
-                saldo -= saque
+                    elif troco >= 10:
+                        troco -= 10
+                        tot_10 += 1
+                        
+                    elif troco >= 1:
+                        troco -= 1
+                        tot_1 += 1
+                
+                else:
+                    break
         
             print('-='*20)            
             print(f'valor de saque solicitado: R${saque}')
